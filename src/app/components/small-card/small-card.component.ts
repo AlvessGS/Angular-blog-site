@@ -13,6 +13,10 @@ export class SmallCardComponent implements OnInit {
   
   @Input()
   cardTitle:string="Nova Atualização!"
+
+  @Input()
+  Id:string="0"
+
   constructor() { }
 
   ngOnInit(): void {
