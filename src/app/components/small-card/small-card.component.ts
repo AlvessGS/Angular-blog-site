@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-small-card',
@@ -6,6 +6,17 @@ import { Component } from '@angular/core';
   templateUrl: './small-card.component.html',
   styleUrl: './small-card.component.css'
 })
-export class SmallCardComponent {
+export class SmallCardComponent implements OnInit {
+  
+  @Input()
+  photoCover:string="https://i.ytimg.com/vi_webp/XSuj5KD17Xs/maxresdefault.webp"
+  
+  @Input()
+  cardTitle:string="Nova Atualização!"
+  constructor() { }
+
+  ngOnInit(): void {
+    
+  }
 
 }
